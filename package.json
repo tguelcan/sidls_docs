@@ -2,6 +2,7 @@
 	"name": "sidls",
 	"version": "0.0.1",
 	"private": true,
+	"homepage": "https://sidls.com",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
