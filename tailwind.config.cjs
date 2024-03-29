@@ -1,12 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-import sidls from "sidls";
 import { fontFamily } from "tailwindcss/defaultTheme";
+import sidls from 'sidls'
+// import sidls from './../preset/preset'
 
-if (process.env.NODE_ENV === 'development') {
-  const sidls = require('../preset');
-} else {
-  const sidls = require('sidls');
-}
 
 export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
