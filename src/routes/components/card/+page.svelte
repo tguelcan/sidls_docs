@@ -121,7 +121,7 @@
 
 <div class="container my-5">
 	<section>
-		<h1 class="mb-4 border-b pb-2 text-3xl font-bold">Card</h1>
+		<h1 class="headline">Card</h1>
 		<div class="grid gap-3 sm:grid-cols-2">
 			<div class="center card py-10">Default Card</div>
 			<div class="card">

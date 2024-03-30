@@ -1,5 +1,5 @@
 <script>
-	import { Archive } from 'phosphor-svelte';
+	import { Archive, BellSlash } from 'phosphor-svelte';
 </script>
 
 <div class="container my-5">
@@ -44,7 +44,7 @@
 		<a href="/components/tab" class="group">
 			<div class="example-card bordered center card">
 				<div class="scale-75 grayscale">
-					<div class="tab">
+					<div class="tab pointer-events-none">
 						<button class="btn active">Hello</button>
 						<button class="btn">World</button>
 						<!-- ... -->
@@ -52,6 +52,17 @@
 				</div>
 			</div>
 			<p class="example-info">Tab</p>
+		</a>
+		<a href="/components/island" class="group">
+			<div class="example-card bordered center card">
+				<div class="scale-75 grayscale">
+					<div class="island pointer-events-none w-32 hover:w-44">
+						<BellSlash />
+						<div>Muted</div>
+					</div>
+				</div>
+			</div>
+			<p class="example-info">Island</p>
 		</a>
 	</div>
 </div>

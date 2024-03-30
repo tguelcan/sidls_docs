@@ -37,7 +37,7 @@
 
 <div class="container my-5 space-y-6">
 	<section>
-		<h1 class="mb-4 border-b pb-2 text-3xl font-bold">Info</h1>
+		<h1 class="headline">Info</h1>
 	</section>
 	<div class="mx-auto max-w-md space-y-4">
 		<div class="info icon">

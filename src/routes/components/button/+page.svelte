@@ -30,7 +30,7 @@
 
 <div class="container my-5">
 	<section>
-		<h1 class="mb-4 border-b pb-2 text-3xl font-bold">Button</h1>
+		<h1 class="headline">Button</h1>
 		<div class="my-4 flex flex-wrap gap-4">
 			<button class="btn">Default</button>
 			<button class="btn primary">Primary</button>

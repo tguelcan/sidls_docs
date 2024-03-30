@@ -35,7 +35,7 @@
 
 <div class="container my-5 space-y-6">
 	<section>
-		<h1 class="mb-4 border-b pb-2 text-3xl font-bold">Tab</h1>
+		<h1 class="headline">Tab</h1>
 	</section>
 
 	<!-- Default tabs -->
