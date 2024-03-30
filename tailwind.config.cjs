@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 import { fontFamily } from 'tailwindcss/defaultTheme';
-// import sidls from 'sidls';
-import sidls from './../preset/preset';
+import sidls from 'sidls';
+// import sidls from './../preset/preset';
 
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/svhighlight/**/*.svelte'],
