@@ -1,5 +1,6 @@
 <script lang="ts">
 	import CodeBlock from '$lib/components/Code.svelte';
+	  import { DotsThreeVertical, ChatCircle, Heart } from "phosphor-svelte"
 
 	let code = `
 <div class="card">
@@ -146,7 +147,7 @@
 					</div>
 					<div>
 						<button class="btn">
-							<i class="ph ph-dots-three-vertical text-xl"></i>
+							<DotsThreeVertical />
 						</button>
 					</div>
 				</div>
@@ -225,8 +226,8 @@
 					<p class="text-subtitle">#countach88</p>
 				</div>
 				<div class="footer flex space-x-4">
-					<button class="icon text-sm"><i class="ph ph-chat-circle"></i> <span>42</span></button>
-					<button class="icon text-sm"><i class="ph ph-chat-circle"></i> <span>32</span></button>
+					<button class="icon text-sm"><Heart /> <span>42</span></button>
+					<button class="icon text-sm"><ChatCircle /> <span>32</span></button>
 				</div>
 			</div>
 		</div>
