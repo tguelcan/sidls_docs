@@ -1,7 +1,7 @@
 <script>
-	  import { FilePlus, ShoppingCartSimple } from "phosphor-svelte"
+	import { FilePlus, ShoppingCartSimple } from 'phosphor-svelte';
 
-import CodeBlock from '$lib/components/Code.svelte';
+	import CodeBlock from '$lib/components/Code.svelte';
 	let code = `
 <button class="btn">Default</button>
 <button class="btn primary">Primary</button>
@@ -30,8 +30,8 @@ import CodeBlock from '$lib/components/Code.svelte';
 
 <div class="container my-5">
 	<section>
-		<h1 class="mb-4 border-b pb-2 text-3xl font-bold">Buttons</h1>
-		<div class="flex flex-wrap gap-4 my-4">
+		<h1 class="mb-4 border-b pb-2 text-3xl font-bold">Button</h1>
+		<div class="my-4 flex flex-wrap gap-4">
 			<button class="btn">Default</button>
 			<button class="btn primary">Primary</button>
 			<button class="btn primary rounded-full">Full Rounded</button>
@@ -44,7 +44,7 @@ import CodeBlock from '$lib/components/Code.svelte';
 		<CodeBlock {code} />
 		<h3 class="mb-5 mt-10">Examples</h3>
 
-		<div class="example flex flex-wrap gap-2 my-4">
+		<div class="example flex flex-wrap gap-2">
 			<button class="btn primary icon">
 				<ShoppingCartSimple /> <span>Add to card</span>
 			</button>
@@ -52,11 +52,14 @@ import CodeBlock from '$lib/components/Code.svelte';
 				<ShoppingCartSimple />
 			</button>
 			<button class="btn primary icon rounded-full">
-				<FilePlus  />
+				<FilePlus />
 				<span>Add File</span>
 			</button>
 		</div>
-
+		<p class="example-info">
+			<a href="https://phosphoricons.com/" target="_blank">Phosphoricons</a> were used in this example.
+			But you can also place your icon set or svg elements.
+		</p>
 		<CodeBlock code={examples} />
 	</section>
 </div>
