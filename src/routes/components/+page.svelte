@@ -6,7 +6,7 @@
 	<div class="grid gap-3 sm:grid-cols-2 sm:gap-5 md:grid-cols-3">
 		<a href="/components/button" class="group">
 			<div class="example-card bordered center card">
-				<div class="scale-75 grayscale">
+				<div class="scale-75">
 					<button class="btn primary pointer-events-none">Submit</button>
 				</div>
 			</div>
@@ -14,7 +14,7 @@
 		</a>
 		<a href="/components/card" class="group">
 			<div class="example-card bordered center card">
-				<div class="scale-75 grayscale">
+				<div class="scale-75">
 					<div class="center card px-14 py-10"></div>
 				</div>
 			</div>
@@ -22,7 +22,7 @@
 		</a>
 		<a href="/components/info" class="group">
 			<div class="example-card bordered center card">
-				<div class="scale-75 grayscale">
+				<div class="scale-75">
 					<div class="left info w-44">
 						<div>
 							<p class="text-title">Info</p>
@@ -35,7 +35,7 @@
 		</a>
 		<a href="/components/badge" class="group">
 			<div class="example-card bordered center card">
-				<div class="scale-75 grayscale">
+				<div class="scale-75">
 					<div class="primary badge">Badge</div>
 				</div>
 			</div>
@@ -43,7 +43,7 @@
 		</a>
 		<a href="/components/tab" class="group">
 			<div class="example-card bordered center card">
-				<div class="scale-75 grayscale">
+				<div class="scale-75">
 					<div class="tab pointer-events-none">
 						<button class="btn active">Hello</button>
 						<button class="btn">World</button>
@@ -55,7 +55,7 @@
 		</a>
 		<a href="/components/island" class="group">
 			<div class="example-card bordered center card">
-				<div class="scale-75 grayscale">
+				<div class="scale-75">
 					<div class="island pointer-events-none w-32 hover:w-44">
 						<BellSlash />
 						<div>Muted</div>
@@ -63,6 +63,21 @@
 				</div>
 			</div>
 			<p class="example-info">Island</p>
+		</a>
+		<a href="/components/form" class="group">
+			<div class="example-card bordered center card">
+				<div class="scale-50">
+					<div class="pointer-events-none">
+						<label for="email">E-mail</label>
+						<div class="flex space-x-2">
+							<input id="email" type="email" placeholder="E-Mail" />
+							<button class="btn primary">Subscribe</button>
+						</div>
+						<p class="text-subtitle">Please type a valid mail adress.</p>
+					</div>
+				</div>
+			</div>
+			<p class="example-info">Form</p>
 		</a>
 	</div>
 </div>

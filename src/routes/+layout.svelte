@@ -6,5 +6,4 @@
 <main>
 	<Navigation />
 	<slot />
-	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </main>

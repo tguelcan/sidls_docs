@@ -1,6 +1,7 @@
 <script>
 	import { User, Images, Newspaper, Calendar } from 'phosphor-svelte';
 	import CodeBlock from '$lib/components/Code.svelte';
+	import { fade } from 'svelte/transition';
 
 	let badgeTab = `
 <div class="tab">
@@ -83,7 +84,7 @@
 			</div>
 
 			{#if tabActve == 1}
-				<div class="card mx-auto max-w-md">
+				<div in:fade class="card mx-auto max-w-md">
 					<div class="header">
 						<h3>Hello</h3>
 						<p class="text-subtitle">First tab example.</p>
@@ -96,7 +97,7 @@
 					</div>
 				</div>
 			{:else if tabActve == 2}
-				<div class="card mx-auto max-w-md">
+				<div in:fade class="card mx-auto max-w-md">
 					<div class="header">
 						<h3>Second Tab</h3>
 						<p class="text-subtitle">Second tab example.</p>
