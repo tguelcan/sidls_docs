@@ -77,7 +77,7 @@
   <div class="footer space-x-2 right">
     <button class="btn primary">Close all</button>
   </div>
-</div>;
+</div>
 `;
 
 	let usercard_example = `
