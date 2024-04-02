@@ -1,5 +1,5 @@
 <script>
-	import { Archive } from 'phosphor-svelte';
+	import { Archive, MagnifyingGlass } from 'phosphor-svelte';
 	import CodeBlock from '$lib/components/Code.svelte';
 
 	let inputDefault = `
@@ -13,6 +13,15 @@
 	`;
 
 	let inputDisabled = `<input id="name" type="text" placeholder="Name" disabled />`;
+	let inputSearch = `
+<div class="relative">
+	<input id="search" type="text" placeholder="Search" class="search input-icon-left" />
+	<div class="icon-left">
+		<i class="ph ph-magnifying-glass"></i>
+	</div>
+</div>
+	`;
+
 	let inputHint = `
 <input id="street" type="text" placeholder="Street" class="hint" />
 <p class="text-subtitle hint">is not a valid address</p>
@@ -142,6 +151,17 @@
 		</div>
 	</div>
 	<CodeBlock code={inputHint} />
+	<div class="flex justify-center">
+		<div class="w-full max-w-xs">
+			<div class="relative">
+				<input id="search" type="text" placeholder="Search" class="search input-icon-left" />
+				<div class="icon-left">
+					<MagnifyingGlass />
+				</div>
+			</div>
+		</div>
+	</div>
+	<CodeBlock code={inputSearch} />
 	<h3 class="my-4">Example</h3>
 	<div class="example">
 		<form class="input-uniform mx-auto max-w-xl">

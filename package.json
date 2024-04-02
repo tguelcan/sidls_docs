@@ -38,6 +38,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-vercel": "^5.2.0",
+		"@vercel/analytics": "^1.2.2",
 		"highlight.js": "^11.9.0",
 		"svhighlight": "^0.7.1"
 	}

@@ -1,4 +1,4 @@
-<div class="container my-6 space-y-12">
+<div class="container my-2 space-y-12">
 	<!-- Main header -->
 	<section class="relative isolate overflow-hidden rounded-xl py-20 text-slate-50">
 		<svg
@@ -15,8 +15,8 @@
 		<div class="mx-auto max-w-xl px-6 sm:px-0">
 			<h1 class="text-2xl font-extrabold uppercase leading-loose">Sidls.</h1>
 			<p class="text-sm">
-				Beautifully designed components that you can copy and paste into your into your
-				applications. Easily accessible. Open source.
+				Beautifully designed open source components that you can copy and paste into your into your
+				applications.
 			</p>
 		</div>
 	</section>

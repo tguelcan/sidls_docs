@@ -4,7 +4,7 @@
 
 <nav class="sticky top-0 z-20 w-full">
 	<div class="container">
-		<div class="navigation blurry py-6">
+		<div class="navigation py-6">
 			<ul class="brand">
 				<li><a href="/" class="hover:text-primary/75">sidls.</a></li>
 			</ul>

@@ -9,9 +9,9 @@
 		<p class="text-subtitle">Subtitle</p>
 	</div>
 	<div class="body">Body area</div>
-	<div class="footer space-x-2 right">
-		<button class="btn secondary">Secondary</button>
-		<button class="btn primary">Primary</button>
+	<div class="bottom space-y-2">
+		<button class="btn secondary w-full">Secondary</button>
+		<button class="btn primary w-full">Primary</button>
 	</div>
 </div>
 `;
@@ -74,7 +74,7 @@
       </li>
     </ul>
   </div>
-  <div class="footer space-x-2 right">
+  <div class="bottom space-x-2 right">
     <button class="btn primary">Close all</button>
   </div>
 </div>
@@ -108,7 +108,7 @@
     <p class="text-subtitle">#lamboghini</p>
     <p class="text-subtitle">#countach88</p>
   </div>
-  <div class="footer flex space-x-4">
+  <div class="bottom flex space-x-4">
     <button class="icon text-sm">
       <i class="ph ph-chat-circle"></i> <span>42</span>
     </button>
@@ -119,10 +119,10 @@
 </div>`;
 </script>
 
-<div class="container my-5">
+<div class="container">
 	<section>
 		<h1 class="headline">Card</h1>
-		<div class="grid gap-3 sm:grid-cols-2">
+		<div class="mb-3 grid gap-3 sm:grid-cols-2">
 			<div class="center card py-10">Default Card</div>
 			<div class="card">
 				<div class="header">
@@ -130,15 +130,15 @@
 					<p class="text-subtitle">Subtitle</p>
 				</div>
 				<div class="body">Body area</div>
-				<div class="footer space-x-2 right">
-					<button class="btn secondary">Secondary</button>
-					<button class="btn primary">Primary</button>
+				<div class="bottom space-y-2">
+					<button class="btn secondary w-full">Secondary</button>
+					<button class="btn primary w-full">Primary</button>
 				</div>
 			</div>
 		</div>
 		<CodeBlock {code} />
 		<h3 class="my-4">Examples</h3>
-		<div class="space-y-3">
+		<div class="space-y-5">
 			<div class="example">
 				<div class="card mx-auto max-w-md">
 					<div class="header flex justify-between">
@@ -197,7 +197,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="footer space-x-2 right">
+					<div class="bottom right">
 						<button class="btn primary">Close all</button>
 					</div>
 				</div>
@@ -226,7 +226,7 @@
 						<p class="text-subtitle">#lamboghini</p>
 						<p class="text-subtitle">#countach88</p>
 					</div>
-					<div class="footer flex space-x-4">
+					<div class="bottom flex space-x-4">
 						<button class="icon text-sm"><Heart /> <span>42</span></button>
 						<button class="icon text-sm"><ChatCircle /> <span>32</span></button>
 					</div>

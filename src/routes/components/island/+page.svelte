@@ -3,7 +3,7 @@
 	import CodeBlock from '$lib/components/Code.svelte';
 
 	let islandDefault = `
-<div class="island w-32 hover:w-44">
+<div class="island h-8 w-32 hover:w-44">
   <i class="ph ph-bell-slash"></i>
   <div>Muted</div>
 </div>
@@ -94,7 +94,7 @@
 		<h1 class="headline">Island</h1>
 	</section>
 	<div class="mx-auto flex w-full max-w-md justify-center space-y-4 text-center">
-		<div class="island w-32 hover:w-44">
+		<div class="island h-8 w-32 hover:w-44">
 			<BellSlash />
 			<div>Muted</div>
 		</div>

@@ -26,7 +26,7 @@
 					<div class="left info w-44">
 						<div>
 							<p class="text-title">Info</p>
-							<p class="text-subtitle">Be careful</p>
+							<p class="text-subtitle">keep cool</p>
 						</div>
 					</div>
 				</div>
@@ -115,7 +115,7 @@
 			<div class="example-card bordered center card">
 				<div class="w-full scale-75">
 					<div class="pointer-events-none text-center">
-						<div class="footer py-6">
+						<div class="footer p-6">
 							<!-- Top -->
 							<ul class="navigation">
 								<li><a href="#about">About</a></li>
