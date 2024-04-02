@@ -21,7 +21,10 @@
 <button class="btn bordered bg-white">
 	<i class="ph ph-shopping-cart-simple"></i>
 </button>
-<button class="btn primary icon rounded-full">
+<button class="btn circle bordered bg-white">
+	<i class="ph ph-shopping-cart-simple"></i>
+</button>
+<button class="btn primary icon cta">
 	<i class="ph ph-file-plus"></i>
 	<span>Add File</span>
 </button>
@@ -48,10 +51,13 @@
 			<button class="btn primary icon">
 				<ShoppingCartSimple /> <span>Add to card</span>
 			</button>
+			<button class="circle btn bordered bg-white">
+				<ShoppingCartSimple />
+			</button>
 			<button class="btn bordered bg-white">
 				<ShoppingCartSimple />
 			</button>
-			<button class="btn primary icon rounded-full">
+			<button class="cta btn primary icon">
 				<FilePlus />
 				<span>Add File</span>
 			</button>

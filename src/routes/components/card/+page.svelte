@@ -86,7 +86,7 @@
     <div class="flex space-x-3">
       <img
         src="/img/avatar.webp"
-        class="h-10 w-10 rounded-full object-cover"
+        class="avatar"
         alt="avatar"
       />
       <div class="truncate">
@@ -207,11 +207,7 @@
 				<div class="card mx-auto max-w-md place-content-end">
 					<div class="header flex justify-between pb-4">
 						<div class="flex space-x-3">
-							<img
-								src="/img/avatar.webp"
-								class="h-10 w-10 rounded-full object-cover"
-								alt="avatar"
-							/>
+							<img src="/img/avatar.webp" class="avatar" alt="avatar" />
 							<div class="truncate">
 								<p class="truncate leading-none">Max Mustermann</p>
 								<p class="text-subtitle">Rookie</p>

@@ -13,6 +13,10 @@
 	`;
 
 	let inputDisabled = `<input id="name" type="text" placeholder="Name" disabled />`;
+	let inputHint = `
+<input id="street" type="text" placeholder="Street" class="hint" />
+<p class="text-subtitle hint">is not a valid address</p>
+	`;
 
 	let exampleForm = `
 <form class="input-uniform">
@@ -126,13 +130,18 @@
 	<CodeBlock code={inputDefault} />
 	<div class="flex justify-center">
 		<div class="w-full max-w-xs">
-			<div class="flex space-x-2">
-				<input id="name" type="text" placeholder="Name" disabled />
-			</div>
+			<input id="name" type="text" placeholder="Name" disabled />
 			<p class="text-subtitle">Input is disabled.</p>
 		</div>
 	</div>
 	<CodeBlock code={inputDisabled} />
+	<div class="flex justify-center">
+		<div class="w-full max-w-xs">
+			<input id="street" type="text" placeholder="Street" class="hint" />
+			<p class="text-subtitle hint">is not a valid address</p>
+		</div>
+	</div>
+	<CodeBlock code={inputHint} />
 	<h3 class="my-4">Example</h3>
 	<div class="example">
 		<form class="input-uniform mx-auto max-w-xl">

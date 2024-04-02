@@ -1,5 +1,5 @@
 <script>
-	import { Archive, BellSlash } from 'phosphor-svelte';
+	import { Archive, BellSlash, User } from 'phosphor-svelte';
 </script>
 
 <div class="container my-5">
@@ -78,6 +78,59 @@
 				</div>
 			</div>
 			<p class="example-info">Form</p>
+		</a>
+		<a href="/components/navigation" class="group">
+			<div class="example-card bordered center card">
+				<div class="w-full scale-75">
+					<div class="pointer-events-none">
+						<div class="navigation w-full p-2">
+							<!-- Brand -->
+							<a href="#brand" class="brand">blurry.</a>
+							<!-- Items -->
+							<ul class="items">
+								<li>
+									<a href="#account" class="item"><span>Item</span></a>
+								</li>
+								<li>
+									<a href="#account" class="item"><span>Item</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="example-info">Navigation</p>
+		</a>
+		<a href="/components/avatar" class="group">
+			<div class="example-card bordered center card">
+				<div class="w-full scale-75">
+					<div class="pointer-events-none text-center grayscale">
+						<img src="/img/avatar.webp" alt="avatar" class="avatar" />
+					</div>
+				</div>
+			</div>
+			<p class="example-info">Avatar</p>
+		</a>
+		<a href="/components/footer" class="group">
+			<div class="example-card bordered center card">
+				<div class="w-full scale-75">
+					<div class="pointer-events-none text-center">
+						<div class="footer py-6">
+							<!-- Top -->
+							<ul class="navigation">
+								<li><a href="#about">About</a></li>
+								<li><a href="#legal">Legal</a></li>
+								<li><a href="#career">...</a></li>
+							</ul>
+							<!-- Bottom -->
+							<ul class="quote">
+								<li>Copyright 2024...</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="example-info">Footer</p>
 		</a>
 	</div>
 </div>
