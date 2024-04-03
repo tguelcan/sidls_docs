@@ -1,5 +1,5 @@
 <script>
-	import { Package } from 'phosphor-svelte';
+	import { Package, GithubLogo, ArrowUpRight } from 'phosphor-svelte';
 </script>
 
 <nav class="sticky top-0 z-20 w-full">
@@ -10,7 +10,12 @@
 			</ul>
 			<ul class="flex gap-3">
 				<li>
-					<a href="/components" class="icon item"><Package size="15" /> <span>Components</span></a>
+					<a href="/components" class="icon item"><Package size="15" /><span>Components</span></a>
+				</li>
+				<li>
+					<a href="https://github.com/tguelcan/sidls" target="_blank" class=" icon item"
+						><GithubLogo size="15" /><ArrowUpRight /></a
+					>
 				</li>
 			</ul>
 		</div>

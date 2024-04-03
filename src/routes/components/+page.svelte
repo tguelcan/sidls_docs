@@ -1,5 +1,5 @@
 <script>
-	import { Archive, BellSlash, User } from 'phosphor-svelte';
+	import { Archive, BellSlash, User, PaperPlaneRight } from 'phosphor-svelte';
 </script>
 
 <div class="container my-5">
@@ -85,7 +85,7 @@
 					<div class="pointer-events-none">
 						<div class="navigation w-full p-2">
 							<!-- Brand -->
-							<a href="#brand" class="brand">blurry.</a>
+							<a href="#brand" class="brand">nav.</a>
 							<!-- Items -->
 							<ul class="items">
 								<li>
@@ -132,6 +132,38 @@
 			</div>
 			<p class="example-info">Footer</p>
 		</a>
+		<a href="/components/chat" class="group">
+			<div class="example-card bordered center card">
+				<div class="w-full scale-50">
+					<div class="pointer-events-none text-center grayscale">
+						<div class="info chat h-32">
+							<div class="out">
+								<p>Lorem ipsum dolor sit amet.</p>
+								<span>Max Mustermann <time datetime="13:37">13:37</time></span>
+							</div>
+						</div>
+						<!-- Bottom -->
+						<div class="chatbox flex items-center space-x-1">
+							<input id="message" type="text" placeholder="Message" class="input-icon-right" />
+							<div class="icon-right">
+								<button><PaperPlaneRight /></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="example-info">Chat</p>
+		</a>
+		<!--
+		<a href="/components/table" class="group">
+			<div class="example-card bordered center card">
+				<div class="w-full scale-75">
+					<div class="pointer-events-none text-center grayscale">table</div>
+				</div>
+			</div>
+			<p class="example-info">Table</p>
+		</a>
+	-->
 	</div>
 </div>
 

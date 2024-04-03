@@ -1,9 +1,18 @@
 <script>
-	import { Archive } from 'phosphor-svelte';
+	import { Archive, Warning } from 'phosphor-svelte';
 	import CodeBlock from '$lib/components/Code.svelte';
 
 	let infoDefault = `
+<!-- Default -->
 <div class="info icon">
+  <i class="ph ph-archive"></i>
+  <div>
+    <p class="text-title">Header of the information</p>
+    <p class="text-subtitle">Subtitle of the information</p>
+  </div>
+</div>
+<!-- Alert -->
+<div class="info alert icon">
   <i class="ph ph-archive"></i>
   <div>
     <p class="text-title">Header of the information</p>
@@ -42,6 +51,13 @@
 	<div class="mx-auto max-w-md space-y-4">
 		<div class="info icon">
 			<Archive class="text-lg" />
+			<div>
+				<p class="text-title">Header of the information</p>
+				<p class="text-subtitle">Subtitle of the information</p>
+			</div>
+		</div>
+		<div class="alert info icon">
+			<Warning class="text-lg" />
 			<div>
 				<p class="text-title">Header of the information</p>
 				<p class="text-subtitle">Subtitle of the information</p>

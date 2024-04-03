@@ -1,5 +1,5 @@
 <script>
-	import { FilePlus, ShoppingCartSimple } from 'phosphor-svelte';
+	import { FilePlus, ShoppingCartSimple, Warning } from 'phosphor-svelte';
 
 	import CodeBlock from '$lib/components/Code.svelte';
 	let code = `
@@ -28,6 +28,15 @@
 	<i class="ph ph-file-plus"></i>
 	<span>Add File</span>
 </button>
+<button class="btn cta alert icon">
+	<i class="ph ph-warning"></i>
+	<span>Commit</span>
+</button>
+	`;
+
+	let sizes = `
+<button class="btn secondary">Default size</button>
+<button class="small btn primary">Small button</button>
 	`;
 </script>
 
@@ -37,29 +46,44 @@
 		<div class="my-4 flex flex-wrap gap-4">
 			<button class="btn">Default</button>
 			<button class="btn primary">Primary</button>
+			<button class="btn alert">Alert</button>
 			<button class="btn primary rounded-full">Full Rounded</button>
 			<button class="btn secondary">Secondary</button>
 			<button class="btn secondary" disabled>Disabled Secondary</button>
 			<button class="btn bordered border border-primary">Bordered</button>
 			<button class="btn" disabled>Disabled Default</button>
 			<button class="btn primary" disabled>Disabled Primary</button>
+			<button class="btn alert" disabled>Disabled Alert</button>
 		</div>
 		<CodeBlock {code} />
-		<h3 class="mb-5 mt-10">Examples</h3>
+		<h3 class="mb-5 mt-10">Sizes</h3>
+		<div class="my-4 flex flex-wrap items-center gap-4">
+			<div>
+				<button class="btn secondary">Default size</button>
+			</div>
+			<div><button class="small btn primary">Small button</button></div>
+		</div>
+		<CodeBlock code={sizes} />
+
+		<h3 class="mb-5 mt-10">With Icons</h3>
 
 		<div class="example flex flex-wrap gap-2">
 			<button class="btn primary icon">
 				<ShoppingCartSimple /> <span>Add to card</span>
 			</button>
-			<button class="circle btn bordered bg-white">
+			<button class="btn bordered circle bg-white">
 				<ShoppingCartSimple />
 			</button>
 			<button class="btn bordered bg-white">
 				<ShoppingCartSimple />
 			</button>
-			<button class="cta btn primary icon">
+			<button class="btn primary cta icon">
 				<FilePlus />
 				<span>Add File</span>
+			</button>
+			<button class="btn alert cta icon">
+				<Warning />
+				<span>Commit</span>
 			</button>
 		</div>
 		<p class="example-info">

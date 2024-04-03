@@ -6,7 +6,9 @@
 
 	let badgeBordered = `<div class="badge bordered">Bordered</div>`;
 
-	let badgePrimary = `<div class="badge primary">Primary</div>`;
+	let badgePrimary = `
+	<div class="badge primary">Primary</div>
+	<div class="badge alert">Alert</div>`;
 </script>
 
 <div class="container my-5 space-y-6">
@@ -18,11 +20,12 @@
 	</div>
 	<CodeBlock code={badgeDefault} />
 	<div class="mx-auto max-w-md space-y-4 text-center">
-		<div class="badge bordered">Bordered</div>
+		<div class="bordered badge">Bordered</div>
 	</div>
 	<CodeBlock code={badgeBordered} />
 	<div class="mx-auto max-w-md space-y-4 text-center">
-		<div class="badge primary">Primary</div>
+		<div class="primary badge">Primary</div>
+		<div class="alert badge">Alert</div>
 	</div>
 	<CodeBlock code={badgePrimary} />
 </div>
