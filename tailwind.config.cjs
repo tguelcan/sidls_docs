@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 import { fontFamily } from 'tailwindcss/defaultTheme';
+import typography from '@tailwindcss/typography';
 import sidls from 'sidls';
-//import sidls from './../preset/preset';
+// import sidls from './../preset/preset';
 
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/svhighlight/**/*.svelte'],
@@ -20,5 +21,6 @@ export default {
       sans: ['Geist', ...fontFamily.sans]
     }
   },
-  presets: [sidls]
+  presets: [sidls],
+  plugins: [typography]
 };

@@ -44,7 +44,7 @@
 </div>`;
 </script>
 
-<div class="container my-5 space-y-6">
+<div class="content gap container space-y-6">
 	<section>
 		<h1 class="headline">Info</h1>
 	</section>

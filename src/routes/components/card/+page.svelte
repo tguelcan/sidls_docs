@@ -119,7 +119,7 @@
 </div>`;
 </script>
 
-<div class="container">
+<div class="content gap container">
 	<section>
 		<h1 class="headline">Card</h1>
 		<div class="mb-3 grid gap-3 sm:grid-cols-2">

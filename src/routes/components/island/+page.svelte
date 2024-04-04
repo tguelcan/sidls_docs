@@ -89,7 +89,7 @@
 `;
 </script>
 
-<div class="container my-5 space-y-6">
+<div class="container content gap space-y-6">
 	<section>
 		<h1 class="headline">Island</h1>
 	</section>

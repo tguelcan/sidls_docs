@@ -2,9 +2,9 @@
 	<div class="footer py-6">
 		<!-- Top -->
 		<ul class="underlined navigation">
-			<li><a href="#about" class="">About</a></li>
-			<li><a href="#legal">Legal</a></li>
-			<li><a href="#career">Career</a></li>
+			<li><a href="https://github.com/tguelcan/sidls" target="_blank">Github</a></li>
+			<li><a href="https://npmjs.com/package/sidls" target="_blank">npm</a></li>
+			<li><a href="/legal">Legal notes</a></li>
 		</ul>
 		<!-- Bottom -->
 		<ul class="quote">

@@ -61,7 +61,7 @@
 	`;
 </script>
 
-<div class="container my-5 space-y-6">
+<div class="container content gap space-y-6">
 	<section>
 		<h1 class="mb-4 border-b pb-2 text-3xl font-bold">Navigation</h1>
 	</section>

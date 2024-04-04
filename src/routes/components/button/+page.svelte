@@ -40,7 +40,7 @@
 	`;
 </script>
 
-<div class="container my-5">
+<div class="content gap container">
 	<section>
 		<h1 class="headline">Button</h1>
 		<div class="my-4 flex flex-wrap gap-4">
@@ -61,7 +61,7 @@
 			<div>
 				<button class="btn secondary">Default size</button>
 			</div>
-			<div><button class="small btn primary">Small button</button></div>
+			<div><button class="btn small primary">Small button</button></div>
 		</div>
 		<CodeBlock code={sizes} />
 
@@ -87,8 +87,8 @@
 			</button>
 		</div>
 		<p class="example-info">
-			<a href="https://phosphoricons.com/" target="_blank">Phosphoricons</a> were used in this example.
-			But you can also place your icon set or svg elements.
+			<a href="https://phosphoricons.com/" target="_blank" class="underlined">Phosphoricons</a> were
+			used in this example. But you can also place your icon set or svg elements.
 		</p>
 		<CodeBlock code={examples} />
 	</section>

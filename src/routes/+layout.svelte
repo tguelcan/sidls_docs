@@ -10,8 +10,10 @@
 	}
 </script>
 
-<main>
+<main class="flex h-[calc(100dvh)] flex-col">
 	<Navigation />
-	<slot />
+	<div class="flex-1">
+		<slot />
+	</div>
 	<FooterElement />
 </main>

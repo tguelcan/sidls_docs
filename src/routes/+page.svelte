@@ -1,6 +1,104 @@
-<div class="container my-2 space-y-12">
+<script>
+	import { HandWaving, Package, Clipboard, ArrowDown, Check, GithubLogo } from 'phosphor-svelte';
+	import { copyToClipboard } from '$lib';
+	import { CodeBlock } from 'svhighlight';
+
+	let copyValue = 'npm install sidls';
+	let copied = false;
+
+	let tailwindPreset = `
+import sidls from 'sidls';
+
+export default {
+  content: [],
+  theme: {},
+  presets: [sidls]
+};
+
+	`;
+</script>
+
+<div
+	class="container relative mx-auto flex max-w-4xl items-center justify-center pt-28 sm:pb-16 sm:pt-28"
+>
+	<div
+		class="absolute inset-0 z-10 h-full w-full bg-gradient-to-tr from-transparent via-white/40 to-transparent"
+	></div>
+	<div class="z-10 max-w-lg space-y-4 text-center sm:space-y-6">
+		<a
+			href="https://github.com/tguelcan/sidls"
+			target="_blank"
+			class="bordered badge cursor-pointer items-center space-x-1 bg-opacity-50"
+		>
+			<HandWaving />
+			<span>contribute</span>
+		</a>
+		<div class="select-none">
+			<h1
+				class="text-center text-3xl font-bold leading-none tracking-tight text-primary drop-shadow-lg sm:text-4xl"
+			>
+				Beautiful Solid Tailwind Components
+			</h1>
+			<p class="text-primary/50">open source, without javascript and in pure css</p>
+		</div>
+		<div class="flex flex-wrap justify-center gap-4 sm:gap-2">
+			<a href="#started" class="btn primary">Get started</a>
+			<a href="/components" class="link btn icon"><Package /> <span>Explore components</span></a>
+		</div>
+	</div>
+
+	<img
+		src="/img/hands.webp"
+		alt="Shoeib Hands"
+		class="absolute inset-0 top-10 z-0 object-contain sm:top-0"
+	/>
+	<span class="sr-only">Photo by Shoeib Abolhassani on Unsplash</span>
+</div>
+<div class="sm:-mt-18 container relative mx-auto mb-12 flex w-full justify-center">
+	<div class="inset-0 mx-auto transition-transform duration-500 hover:translate-y-4">
+		<ArrowDown size="40" />
+	</div>
+</div>
+<!-- Get started button -->
+<section id="started" class="container mx-auto max-w-md scroll-mt-12 space-y-6">
+	<div>
+		<p>Install sidls as a dependency with yarn or npm, for example:</p>
+		<div class="relative flex max-w-60 items-center">
+			<CodeBlock
+				code="npm install sidls"
+				language="bash"
+				showLineNumbers={false}
+				showHeader={false}
+			/>
+			<button
+				class="icon-right mt-2 text-white/75 hover:text-white"
+				on:click={() => (copyToClipboard(copyValue), (copied = true))}
+			>
+				{#if copied}
+					<Check />
+				{:else}
+					<Clipboard />
+				{/if}
+			</button>
+		</div>
+	</div>
+	<div>
+		<p>Add sidls as a preset in your <b>tailwind.config.js</b></p>
+		<div class="relative flex items-center">
+			<CodeBlock
+				code={tailwindPreset}
+				language="javascript"
+				highlightLines="0, 5"
+				showLineNumbers={false}
+				showHeader={false}
+			/>
+		</div>
+	</div>
+</section>
+
+<section class="container content my-12 space-y-12">
 	<!-- Main header -->
-	<section class="relative isolate overflow-hidden rounded-xl py-20 text-slate-50">
+	<section class="relative isolate overflow-hidden rounded-xl py-20 text-slate-50 shadow-lg">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			preserveAspectRatio="none"
@@ -13,16 +111,17 @@
 			</g>
 		</svg>
 		<div class="mx-auto max-w-xl px-6 sm:px-0">
-			<h1 class="text-2xl font-extrabold uppercase leading-loose">Sidls.</h1>
+			<h1 class="text-2xl font-extrabold uppercase leading-loose">But one thing</h1>
 			<p class="text-sm">
-				Beautifully designed open source components that you can copy and paste into your into your
-				applications.
+				The library is still under development. Collaboration and the reporting of bugs is welcome
 			</p>
+			<div class="mt-4 flex">
+				<a href="https://github.com/tguelcan/sidls" target="_blank" class="btn secondary icon">
+					<GithubLogo />
+					<span>contribute</span>
+				</a>
+			</div>
 		</div>
 	</section>
 	<!-- End main header -->
-
-	<!-- Getting started -->
-	<section class="container rounded-lg bg-slate-100 py-32">Getting Started Here 2</section>
-	<!-- End getting started -->
-</div>
+</section>

@@ -2,7 +2,7 @@
 	import { Archive, BellSlash, User, PaperPlaneRight } from 'phosphor-svelte';
 </script>
 
-<div class="container my-5">
+<div class="container content gap">
 	<div class="grid gap-3 sm:grid-cols-2 sm:gap-5 md:grid-cols-3">
 		<a href="/components/button" class="group">
 			<div class="example-card bordered center card">
@@ -154,6 +154,20 @@
 			</div>
 			<p class="example-info">Chat</p>
 		</a>
+		<a href="/components/layout" class="group">
+			<div class="example-card bordered center card">
+				<div class="w-full scale-75">
+					<div class="pointer-events-none text-center grayscale">
+						<div class="flex-flex-col mx-auto w-full max-w-sm space-y-1 text-xs">
+							<div class="primary info !bg-primary/30">Navigation</div>
+							<div class="primary info center flex h-16">Content</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="example-info">Layout</p>
+		</a>
+
 		<!--
 		<a href="/components/table" class="group">
 			<div class="example-card bordered center card">
