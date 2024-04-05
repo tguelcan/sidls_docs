@@ -39,7 +39,7 @@ export default {
 			>
 				Beautiful Solid Tailwind Components
 			</h1>
-			<p class="text-primary/50">open source, without javascript and in pure css</p>
+			<p class="text-primary/50">open source, without javascript, in pure css</p>
 		</div>
 		<div class="flex flex-wrap justify-center gap-4 sm:gap-2">
 			<a href="#started" class="btn primary">Get started</a>
@@ -54,8 +54,8 @@ export default {
 	/>
 	<span class="sr-only">Photo by Shoeib Abolhassani on Unsplash</span>
 </div>
-<div class="sm:-mt-18 container relative mx-auto mb-12 flex w-full justify-center">
-	<div class="inset-0 mx-auto transition-transform duration-500 hover:translate-y-4">
+<div class="container relative mx-auto flex w-full justify-center">
+	<div class="inset-0 mx-auto py-16 transition-transform duration-500 hover:translate-y-4 sm:pt-0">
 		<ArrowDown size="40" />
 	</div>
 </div>
@@ -96,7 +96,7 @@ export default {
 	</div>
 </section>
 
-<section class="container content my-12 space-y-12">
+<section class="content container my-12 space-y-12">
 	<!-- Main header -->
 	<section class="relative isolate overflow-hidden rounded-xl py-20 text-slate-50 shadow-lg">
 		<svg

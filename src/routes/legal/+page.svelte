@@ -1,11 +1,11 @@
 <main>
 	<img
 		src="/img/example.webp"
-		class="mx-auto h-64 w-full max-w-4xl rounded-b-xl object-cover"
+		class="mx-auto h-64 w-full max-w-4xl object-cover lg:rounded-b-xl"
 		alt=""
 	/>
 </main>
-<div class="container content prose my-4">
+<div class="content container prose my-4">
 	<h1>Imprint</h1>
 	<p class="text-title">Postal address</p>
 	<p>

@@ -73,5 +73,5 @@
 			</ul>
 		</div>
 	</div>
-	<CodeBlock code={defaultContent} />
+	<CodeBlock code={defaultContentWithoutCap} />
 </div>
