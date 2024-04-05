@@ -22,7 +22,7 @@
 	`;
 
 	let infoPrimary = `
-<div class="primary info center">
+<div class="info primary center">
   <p class="text-title">Header of the information</p>
 </div>
 	`;

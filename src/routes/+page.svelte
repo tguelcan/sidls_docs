@@ -11,7 +11,16 @@ import sidls from 'sidls';
 
 export default {
   content: [],
-  theme: {},
+  // Customizations specific colors to this project
+	theme: {
+		extend: {
+			colors: {
+				light: "#f4f4f5",
+				primary: "#111927",
+				alert: "#ef4444",
+			},
+		},
+	},
   presets: [sidls]
 };
 
@@ -88,15 +97,36 @@ export default {
 			<CodeBlock
 				code={tailwindPreset}
 				language="javascript"
-				highlightLines="0, 5"
+				highlightLines="0, 14"
 				showLineNumbers={false}
 				showHeader={false}
 			/>
 		</div>
+
+		<div class="my-4">
+			<p class="text-title">Default colors are:</p>
+			<p class="text-subtitle">
+				Colours can be adapted as described in your <b>tailwind.config.js</b> file.
+			</p>
+			<div class="mt-2 flex flex-wrap gap-4">
+				<div class="flex items-center space-x-1">
+					<div class="h-3 w-3 rounded-full bg-primary"></div>
+					<span class="text-title">Primary</span>
+				</div>
+				<div class="flex items-center space-x-1">
+					<div class="h-3 w-3 rounded-full bg-light"></div>
+					<span class="text-title">Light</span>
+				</div>
+				<div class="flex items-center space-x-1">
+					<div class="h-3 w-3 rounded-full bg-alert"></div>
+					<span class="text-title">Alert</span>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 
-<section class="content container my-12 space-y-12">
+<section class="container content my-12 space-y-12">
 	<!-- Main header -->
 	<section class="relative isolate overflow-hidden rounded-xl py-20 text-slate-50 shadow-lg">
 		<svg

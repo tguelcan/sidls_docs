@@ -40,7 +40,7 @@
 			><img src="/img/avatar.webp" alt="avatar" class="avatar group-hover:opacity-90" />
 			<div>
 				<p class="text-title group-hover:text-primary/80">Max Mustermann</p>
-				<p class="text-subtitle">Max Mustermann</p>
+				<p class="text-subtitle">My special role</p>
 			</div>
 		</a>
 	</div>

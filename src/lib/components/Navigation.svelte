@@ -10,6 +10,13 @@
 			</ul>
 			<ul class="flex items-center sm:gap-3">
 				<li>
+					<a href="/about" class="icon item"
+						><img src="/img/signe.svg" alt="Logo" width="11" class="opacity-50" /><span
+							class="hidden sm:inline-block">About</span
+						></a
+					>
+				</li>
+				<li>
 					<a href="/components" class="icon item"
 						><Package size="15" /><span class="hidden sm:inline-block">Components</span></a
 					>

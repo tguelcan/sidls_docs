@@ -7,6 +7,13 @@ import sidls from 'sidls';
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/svhighlight/**/*.svelte'],
   theme: {
+    extend: {
+      colors: {
+        light: '#f4f4f5',
+        primary: '#111927',
+        alert: '#ef4444'
+      }
+    },
     container: {
       center: true,
       screens: {
