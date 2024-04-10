@@ -94,7 +94,7 @@ export default {
 			<CodeBlock
 				code={tailwindPreset}
 				language="javascript"
-				highlightLines="0, 14"
+				highlightLines="0, 15"
 				showLineNumbers={false}
 				showHeader={false}
 			/>

@@ -83,7 +83,7 @@
 			<div class="example-card bordered center card">
 				<div class="w-full scale-75">
 					<div class="pointer-events-none">
-						<div class="navigation w-full p-2">
+						<div class="navigation w-full p-2 pointer-events-none">
 							<!-- Brand -->
 							<a href="#brand" class="brand">nav.</a>
 							<!-- Items -->
