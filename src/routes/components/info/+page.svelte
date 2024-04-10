@@ -19,6 +19,13 @@
     <p class="text-subtitle">Subtitle of the information</p>
   </div>
 </div>
+<div class="info success icon">
+  <i class="ph ph-archive"></i>
+  <div>
+    <p class="text-title">Header of the information</p>
+    <p class="text-subtitle">Subtitle of the information</p>
+  </div>
+</div>
 	`;
 
 	let infoPrimary = `
@@ -57,6 +64,13 @@
 			</div>
 		</div>
 		<div class="alert info icon">
+			<Warning class="text-lg" />
+			<div>
+				<p class="text-title">Header of the information</p>
+				<p class="text-subtitle">Subtitle of the information</p>
+			</div>
+		</div>
+		<div class="success info icon">
 			<Warning class="text-lg" />
 			<div>
 				<p class="text-title">Header of the information</p>

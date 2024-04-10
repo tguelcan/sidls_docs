@@ -18,6 +18,7 @@ export default {
 				light: "#f4f4f5",
 				primary: "#111927",
 				alert: "#ef4444",
+				success: "#success"
 			},
 		},
 	},
@@ -28,11 +29,8 @@ export default {
 </script>
 
 <div
-	class="container relative mx-auto flex max-w-4xl items-center justify-center pt-28 sm:pb-16 sm:pt-28"
+	class="relative mx-auto flex  items-center justify-center pt-28 sm:pb-16 sm:pt-28"
 >
-	<div
-		class="absolute inset-0 z-10 h-full w-full bg-gradient-to-tr from-transparent via-white/40 to-transparent"
-	></div>
 	<div class="z-10 max-w-lg space-y-4 text-center sm:space-y-6">
 		<a
 			href="https://github.com/tguelcan/sidls"
@@ -55,11 +53,10 @@ export default {
 			<a href="/components" class="link btn icon"><Package /> <span>Explore components</span></a>
 		</div>
 	</div>
-
 	<img
 		src="/img/hands.webp"
-		alt="Shoeib Hands"
-		class="absolute inset-0 top-10 z-0 object-contain sm:top-0"
+		alt="Hands"
+		class="absolute inset-0 top-10 z-0 object-contain sm:top-0 opacity-75"
 	/>
 	<span class="sr-only">Photo by Shoeib Abolhassani on Unsplash</span>
 </div>
@@ -69,7 +66,7 @@ export default {
 	</div>
 </div>
 <!-- Get started button -->
-<section id="started" class="container mx-auto max-w-md scroll-mt-12 space-y-6">
+<section id="started" class="container mx-auto max-w-xl scroll-mt-12 space-y-6">
 	<div>
 		<p>Install sidls as a dependency with yarn or npm, for example:</p>
 		<div class="relative flex max-w-60 items-center">
@@ -103,7 +100,7 @@ export default {
 			/>
 		</div>
 
-		<div class="my-4">
+		<div class="my-6">
 			<p class="text-title">Default colors are:</p>
 			<p class="text-subtitle">
 				Colours can be adapted as described in your <b>tailwind.config.js</b> file.
@@ -120,6 +117,10 @@ export default {
 				<div class="flex items-center space-x-1">
 					<div class="h-3 w-3 rounded-full bg-alert"></div>
 					<span class="text-title">Alert</span>
+				</div>
+				<div class="flex items-center space-x-1">
+					<div class="h-3 w-3 rounded-full bg-success"></div>
+					<span class="text-title">Success</span>
 				</div>
 			</div>
 		</div>

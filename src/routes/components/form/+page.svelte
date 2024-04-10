@@ -23,8 +23,10 @@
 	`;
 
 	let inputHint = `
-<input id="street" type="text" placeholder="Street" class="hint" />
-<p class="text-subtitle hint">is not a valid address</p>
+<input id="street" type="text" placeholder="Street" class="invalid" />
+<p class="text-subtitle invalid">is not a valid address</p>
+<input id="street" type="text" placeholder="Street" class="valid" />
+<p class="text-subtitle valid">is not a valid address</p>
 	`;
 
 	let exampleForm = `
@@ -163,10 +165,14 @@
 		</div>
 	</div>
 	<CodeBlock code={inputDisabled} />
-	<div class="flex justify-center">
+	<div class="input-uniform mx-auto max-w-xs">
 		<div class="w-full max-w-xs">
-			<input id="street" type="text" placeholder="Street" class="hint" />
-			<p class="text-subtitle hint">is not a valid address</p>
+			<input id="street" type="text" placeholder="Street" class="invalid" />
+			<p class="text-subtitle">is not a valid address</p>
+		</div>
+		<div class="w-full max-w-xs">
+			<input id="street" type="text" placeholder="Street" class="valid" />
+			<p class="text-subtitle">address is a valid</p>
 		</div>
 	</div>
 	<CodeBlock code={inputHint} />
@@ -294,7 +300,7 @@
 				<p class="text-subtitle">Get all the latest sidls updates.</p>
 			</div>
 			<div class="body">
-				<div class="w-full max-w-md">
+				<div class="w-full sm:max-w-md">
 					<div class="flex flex-col gap-2 sm:flex-row">
 						<input id="email" type="email" placeholder="E-Mail" />
 						<button class="btn primary w-full sm:w-auto">Subscribe</button>

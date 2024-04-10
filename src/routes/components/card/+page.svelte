@@ -117,6 +117,43 @@
     </button>
   </div>
 </div>`;
+
+
+	const posts: Object[] = [
+		{
+			author: {
+				name: 'Max Mustermann',
+				role: 'Rookie'
+			},
+			picture: '/img/countach.webp',
+			content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+			tags: ['#lamboghini', '#countach88'],
+			likeCount: 42,
+			commentCount: 31
+		},
+		{
+			author: {
+				name: 'Max Mustermann',
+				role: 'Rookie'
+			},
+			picture: '/img/example.webp',
+			content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Sed diam voluptua.',
+			tags: ['#nature', '#bio'],
+			likeCount: 52,
+			commentCount: 21
+		},
+		{
+			author: {
+				name: 'Max Mustermann',
+				role: 'Rookie'
+			},
+			picture: '/img/about.webp',
+			content: 'Sed diam voluptua.consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+			tags: ['#technology', '#innovation'],
+			likeCount: 21,
+			commentCount: 12
+		}
+	];
 </script>
 
 <div class="content gap container">
@@ -203,34 +240,40 @@
 				</div>
 			</div>
 			<CodeBlock code={notification_example} />
-			<div class="example">
-				<div class="card mx-auto max-w-md place-content-end">
-					<div class="header flex justify-between pb-4">
-						<div class="flex space-x-3">
-							<img src="/img/avatar.webp" class="avatar" alt="avatar" />
-							<div class="truncate">
-								<p class="truncate leading-none">Max Mustermann</p>
-								<p class="text-subtitle">Rookie</p>
+			<div class="example h-96 overflow-y-scroll space-y-4">
+				{#each posts as { author, picture, content, tags, likeCount, commentCount }}
+					<div class="card mx-auto max-w-md place-content-end">
+						<div class="header flex justify-between pb-4">
+							<div class="flex space-x-3">
+								<img src="/img/avatar.webp" class="avatar" alt="avatar" />
+								<div class="truncate">
+									<p class="truncate leading-none">{author.name}</p>
+									<p class="text-subtitle">{author.role}</p>
+								</div>
+							</div>
+							<div>
+								<button class="btn primary rounded-full">Follow</button>
 							</div>
 						</div>
-						<div>
-							<button class="btn primary rounded-full">Follow</button>
+						<img src="{picture}" class="h-64 w-full object-cover" alt="header" />
+						<div class="body flex flex-wrap gap-2">
+							<p>
+								{content}
+							</p>
+							{#each tags as tag}
+								<p class="text-subtitle">{tag}</p>
+							{/each}
+						</div>
+						<div class="bottom flex space-x-4">
+							<button class="icon text-sm">
+								<Heart />
+								<span>{likeCount}</span></button>
+							<button class="icon text-sm">
+								<ChatCircle />
+								<span>{commentCount}</span></button>
 						</div>
 					</div>
-					<img src="/img/countach.webp" class="h-64 w-full object-cover" alt="header" />
-					<div class="body flex flex-wrap gap-2">
-						<p>
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-							invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-						</p>
-						<p class="text-subtitle">#lamboghini</p>
-						<p class="text-subtitle">#countach88</p>
-					</div>
-					<div class="bottom flex space-x-4">
-						<button class="icon text-sm"><Heart /> <span>42</span></button>
-						<button class="icon text-sm"><ChatCircle /> <span>32</span></button>
-					</div>
-				</div>
+				{/each}
 			</div>
 			<CodeBlock code={usercard_example} />
 		</div>

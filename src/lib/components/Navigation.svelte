@@ -1,5 +1,5 @@
 <script>
-	import { Package, GithubLogo, ArrowUpRight } from 'phosphor-svelte';
+	import { Package, GithubLogo, ArrowUpRight, Handshake } from 'phosphor-svelte';
 </script>
 
 <nav class="fixed top-0 z-20 w-full">
@@ -11,7 +11,7 @@
 			<ul class="flex items-center sm:gap-3">
 				<li>
 					<a href="/about" class="icon item"
-						><img src="/img/signe.svg" alt="Logo" width="11" class="opacity-50" /><span
+						><Handshake size="15" /><span
 							class="hidden sm:inline-block">About</span
 						></a
 					>
