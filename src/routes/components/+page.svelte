@@ -1,12 +1,12 @@
 <script>
-	import { Archive, BellSlash, User, PaperPlaneRight } from 'phosphor-svelte';
+	import { BellSlash, PaperPlaneRight, Heart, Horse, Umbrella } from 'phosphor-svelte';
 </script>
 
 <div class="container content gap">
 	<div class="grid gap-3 sm:grid-cols-2 sm:gap-5 md:grid-cols-3">
 		<a href="/components/button" class="group">
 			<div class="example-card bordered center card">
-				<div class="scale-75">
+				<div class="scale-80">
 					<button class="btn primary pointer-events-none">Submit</button>
 				</div>
 			</div>
@@ -14,7 +14,7 @@
 		</a>
 		<a href="/components/card" class="group">
 			<div class="example-card bordered center card">
-				<div class="scale-75">
+				<div class="scale-80">
 					<div class="center card px-14 py-10"></div>
 				</div>
 			</div>
@@ -22,7 +22,7 @@
 		</a>
 		<a href="/components/info" class="group">
 			<div class="example-card bordered center card">
-				<div class="scale-75">
+				<div class="scale-80">
 					<div class="left info w-44">
 						<div>
 							<p class="text-title">Info</p>
@@ -35,7 +35,7 @@
 		</a>
 		<a href="/components/badge" class="group">
 			<div class="example-card bordered center card">
-				<div class="scale-75">
+				<div class="scale-80">
 					<div class="primary badge">Badge</div>
 				</div>
 			</div>
@@ -43,7 +43,7 @@
 		</a>
 		<a href="/components/tab" class="group">
 			<div class="example-card bordered center card">
-				<div class="scale-75">
+				<div class="scale-80">
 					<div class="tab pointer-events-none">
 						<button class="btn active">Hello</button>
 						<button class="btn">World</button>
@@ -55,7 +55,7 @@
 		</a>
 		<a href="/components/island" class="group">
 			<div class="example-card bordered center card">
-				<div class="scale-75">
+				<div class="scale-80">
 					<div class="island pointer-events-none w-32 hover:w-44">
 						<BellSlash />
 						<div>Muted</div>
@@ -66,7 +66,7 @@
 		</a>
 		<a href="/components/form" class="group">
 			<div class="example-card bordered center card">
-				<div class="scale-50">
+				<div class="scale-75">
 					<div class="pointer-events-none">
 						<label for="email">E-mail</label>
 						<div class="flex space-x-2">
@@ -81,9 +81,9 @@
 		</a>
 		<a href="/components/navigation" class="group">
 			<div class="example-card bordered center card">
-				<div class="w-full scale-75">
+				<div class="scale-80 w-full">
 					<div class="pointer-events-none">
-						<div class="navigation w-full p-2 pointer-events-none">
+						<div class="navigation pointer-events-none w-full p-2">
 							<!-- Brand -->
 							<a href="#brand" class="brand">nav.</a>
 							<!-- Items -->
@@ -103,7 +103,7 @@
 		</a>
 		<a href="/components/avatar" class="group">
 			<div class="example-card bordered center card">
-				<div class="w-full scale-75">
+				<div class="scale-80 w-full">
 					<div class="pointer-events-none text-center grayscale">
 						<img src="/img/avatar.webp" alt="avatar" class="avatar" />
 					</div>
@@ -113,7 +113,7 @@
 		</a>
 		<a href="/components/footer" class="group">
 			<div class="example-card bordered center card">
-				<div class="w-full scale-75">
+				<div class="w-full scale-90">
 					<div class="pointer-events-none text-center">
 						<div class="footer p-6">
 							<!-- Top -->
@@ -134,7 +134,7 @@
 		</a>
 		<a href="/components/chat" class="group">
 			<div class="example-card bordered center card">
-				<div class="w-full scale-50">
+				<div class="w-full scale-75">
 					<div class="pointer-events-none text-center grayscale">
 						<div class="info chat h-32">
 							<div class="out">
@@ -166,6 +166,54 @@
 				</div>
 			</div>
 			<p class="example-info">Layout</p>
+		</a>
+
+		<a href="/components/title" class="group">
+			<div class="example-card bordered center card">
+				<div class="w-full scale-75">
+					<div class="pointer-events-none text-center grayscale">
+						<div class="info bg-light">
+							<div class="flex items-center justify-between">
+								<div>
+									<h1>Title</h1>
+									<p class="text-subtitle">Subtitle</p>
+								</div>
+								<a href="/" class="btn primary">Button</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="example-info">Title</p>
+		</a>
+
+		<a href="/components/checklist" class="group">
+			<div class="example-card bordered center card">
+				<div class="w-full scale-75">
+					<div class="pointer-events-none text-center grayscale">
+						<div class="card">
+							<div class="body space-y-2">
+								<label for="horse" class="check-list">
+									<Horse size={32} />
+									Horse Pay
+									<input name="payment_method" id="horse" value="horse" type="radio" />
+								</label>
+								<label for="love" class="check-list">
+									<Heart size={32} />
+									Love Pay
+									<input name="payment_method" id="love" value="love" type="radio" />
+								</label>
+								<label for="rain" class="check-list">
+									<Umbrella size={32} />
+									Rain Pay
+									<input name="payment_method" id="rain" value="rain" type="radio" />
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="example-info">Check list</p>
 		</a>
 
 		<!--

@@ -28,9 +28,7 @@ export default {
 	`;
 </script>
 
-<div
-	class="relative mx-auto flex  items-center justify-center pt-28 sm:pb-16 sm:pt-28"
->
+<div class="relative mx-auto flex items-center justify-center pt-28 sm:pb-16 sm:pt-28">
 	<div class="z-10 max-w-lg space-y-4 text-center sm:space-y-6">
 		<a
 			href="https://github.com/tguelcan/sidls"
@@ -56,7 +54,7 @@ export default {
 	<img
 		src="/img/hands.webp"
 		alt="Hands"
-		class="absolute inset-0 top-10 z-0 object-contain sm:top-0 opacity-75"
+		class="absolute inset-0 top-10 z-0 object-contain opacity-75 sm:top-0"
 	/>
 	<span class="sr-only">Photo by Shoeib Abolhassani on Unsplash</span>
 </div>
@@ -143,9 +141,7 @@ export default {
 		</svg>
 		<div class="mx-auto max-w-xl px-6 sm:px-0">
 			<h1 class="text-2xl font-extrabold uppercase leading-loose">But one thing</h1>
-			<p class="text-sm">
-				The library is still under development. Collaboration and the reporting of bugs is welcome
-			</p>
+			<p class="text-sm">Collaboration and the reporting of bugs is welcome.</p>
 			<div class="mt-4 flex">
 				<a href="https://github.com/tguelcan/sidls" target="_blank" class="btn secondary icon">
 					<GithubLogo />
